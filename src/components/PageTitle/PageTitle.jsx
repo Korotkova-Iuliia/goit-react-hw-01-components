@@ -1,3 +1,3 @@
-export const PageTitle = () => {
-  return <h1 class="title">Text</h1>;
-};
+// export const PageTitle = props => {
+//   return <h1 className="title">{props.text}</h1>;
+// };
