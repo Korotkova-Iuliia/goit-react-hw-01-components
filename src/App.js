@@ -1,10 +1,12 @@
-import { Profile } from 'components/Profile/Profile';
-import user from '../ user.json';
+import { Statistics } from './components/statistics/Statistics.jsx';
+// import user from './user.json';
+import data from './data.json';
 
 export const App = () => {
   return (
     <>
-      <Profile user={user} />
+      {/* <Profile user={user} /> */}
+      <Statistics stats={data} />
     </>
   );
 };
