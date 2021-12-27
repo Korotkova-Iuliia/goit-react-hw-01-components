@@ -1,29 +1,22 @@
-import { Statistics } from './components/statistics/Statistics.jsx';
-// import user from './user.json';
+import { Statistics } from './components/statistics/Statistics';
+import { Profile } from './components/profile/Profile';
+import { FriendList } from './components/friendList/FriendList';
+import { TransactionHistory } from './components/transactionHistory/TransactionHistory';
+import user from './user.json';
 import data from './data.json';
+import friends from './friends.json';
+import transactions from './transactions.json';
+import styles from './components/Global.module.css';
 
 export const App = () => {
   return (
     <>
-      {/* <Profile user={user} /> */}
+      <Profile user={user} />
       <Statistics stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
 
 export default App;
-
-// import { PageTitle } from 'components/PageTitle/PageTitle';
-// import { EventBoard } from 'components/EventBoard/EventBoard';
-// import events from '../events.json';
-
-// export const App = () => {
-//   return (
-//     <>
-//       <PageTitle text="24th Core Worlds Coalition Conference" />
-//       <EventBoard events={events} />
-//     </>
-//   );
-// };
-
-// export default App;
