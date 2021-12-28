@@ -1,4 +1,4 @@
-import { StatList } from '../list/StatList';
+import { StatisticsList } from '../StatisticsList/StatisticsList';
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 
@@ -6,7 +6,7 @@ export const Statistics = ({ stats, title }) => {
   return (
     <section className={styles.statistics}>
       <h2 className={styles.title}>{title}</h2>
-      <StatList stats={stats} />
+      <StatisticsList stats={stats} />
     </section>
   );
 };

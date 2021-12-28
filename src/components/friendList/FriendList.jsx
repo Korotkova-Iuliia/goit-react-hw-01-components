@@ -1,4 +1,5 @@
-import { FrandListItem } from '../list/StatList';
+import { FrandListItem } from '../frandListItem/FrandListItem';
+import PropTypes from 'prop-types';
 export const FriendList = ({ friends }) => {
   return (
     <ul>
@@ -7,4 +8,13 @@ export const FriendList = ({ friends }) => {
       ))}
     </ul>
   );
+};
+FrandListItem.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+    }),
+  ),
 };
