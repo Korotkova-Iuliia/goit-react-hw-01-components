@@ -1,4 +1,5 @@
 import styles from './StatisticsList.module.css';
+// import { getRandomHexColor } from '../../components/helpers/RandomColor';
 
 export const StatisticsList = ({ stats }) => {
   return (

@@ -6,14 +6,14 @@ import user from './user.json';
 import data from './data.json';
 import friends from './friends.json';
 import transactions from './transactions.json';
-import styles from './components/Global.module.css';
+import styles from './components/GlobalStyles.module.css';
 
 export const App = () => {
   return (
     <>
-      <Profile user={user} />
+      <Profile user={user} className={styles.Profile} />
       <Statistics stats={data} />
-      <FriendList friends={friends} />
+      <FriendList friends={friends} className={styles.FriendList} />
       <TransactionHistory items={transactions} />
     </>
   );

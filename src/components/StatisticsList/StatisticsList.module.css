@@ -18,12 +18,3 @@
   background-color: rgb(174, 220, 238);
   border: solid 0.5px rgb(188, 190, 190);
 }
-
-/* export const ListOnlineTracker = styled.span`
-    width: 10px;
-    height: 10px;
-    background-color: ${({isOnline}) => if(isOnline) {`green`} else {`red`}};
-    border: 1px solid green;
-    border-radius: 50%;
-
-`;  */
