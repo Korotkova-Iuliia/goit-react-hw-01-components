@@ -26,13 +26,19 @@
   height: 100%;
   width: 20px;
   height: 20px;
-  background-color: red;
+  background-color: green;
   border-radius: 50%;
 }
 .offline {
-  background-color: green;
+  margin-right: 25px;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
 }
-
 .name {
   font-size: 40px;
   line-height: 1;
@@ -40,11 +46,3 @@
   margin: 0 0 0 25px;
   padding: 0;
 }
-/* export const ListOnlineTracker = styled.span`
-    width: 10px;
-    height: 10px;
-    background-color: ${({isOnline}) => if(isOnline) {`green`} else {`red`}};
-    border: 1px solid green;
-    border-radius: 50%;
-
-`;  */
