@@ -1,5 +1,4 @@
 export const TransactionItem = ({ item: { type, amount, currency } }) => {
-  console.log(type);
   return (
     <tbody>
       <tr>
