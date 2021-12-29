@@ -10,7 +10,6 @@ export const Profile = ({ user }) => {
     </div>
   );
 };
-
 Profile.propTypes = {
   user: PropTypes.shape({
     username: PropTypes.string.isRequired,
