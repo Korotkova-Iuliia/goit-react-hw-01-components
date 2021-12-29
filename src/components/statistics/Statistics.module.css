@@ -8,6 +8,7 @@
   line-height: 1.35;
   text-align: center;
   background-color: #fff;
+  width: 300px;
 }
 .title {
   margin: 0;
@@ -25,12 +26,13 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
+  width: 100%;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.35;
   text-align: center;
   align-items: center;
-  color: #000000;
-  background-color: rgb(174, 220, 238);
+  color: white;
+  /* background-color: rgb(174, 220, 238); */
   border: solid 0.5px rgb(188, 190, 190);
 }
