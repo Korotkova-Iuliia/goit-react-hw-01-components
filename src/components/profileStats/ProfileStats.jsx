@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from '../profile/Profile.module.css';
 export const ProfileStats = ({ user: { stats } }) => {
   return (
@@ -16,4 +17,13 @@ export const ProfileStats = ({ user: { stats } }) => {
       </li>
     </ul>
   );
+};
+ProfileStats.propTypes = {
+  user: PropTypes.shape({
+    stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+    }),
+  }),
 };

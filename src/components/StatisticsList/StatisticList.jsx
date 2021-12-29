@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types';
 import styles from '../statistics/Statistics.module.css';
-import { getRandomHexColor } from '../helpers/RandomColor';
+import { getRandomHexColor } from '../../helpers/RandomColor';
 export const StatisticsList = ({ stats }) => {
   return (
     <ul className={styles.stat_list}>
@@ -17,4 +18,13 @@ export const StatisticsList = ({ stats }) => {
       })}
     </ul>
   );
+};
+StatisticsList.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ),
 };
