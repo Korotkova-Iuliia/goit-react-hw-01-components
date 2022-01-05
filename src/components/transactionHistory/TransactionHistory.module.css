@@ -11,11 +11,19 @@
 .transactionItem {
   text-transform: capitalize;
 }
-thead {
+tr:nth-child(even) {
+  background-color: rgb(126, 183, 233);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(186, 215, 240);
+}
+table .tableHead {
   color: white;
   text-transform: uppercase;
   background-color: rgb(50, 157, 245);
 }
+
 tr {
   letter-spacing: 1px;
 }

@@ -5,15 +5,17 @@ export const TransactionHistory = ({ items }) => {
   return (
     <table className={styles.transactionHistory}>
       <thead>
-        <tr>
+        <tr className={styles.tableHead}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
       </thead>
-      {items.map(item => (
-        <TransactionItem key={item.id} item={item} />
-      ))}
+      <tbody className={styles.transactionItem}>
+        {items.map(item => (
+          <TransactionItem key={item.id} item={item} />
+        ))}
+      </tbody>
     </table>
   );
 };
