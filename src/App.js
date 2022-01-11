@@ -11,7 +11,7 @@ import styles from './components/GlobalStyles.module.css';
 export const App = () => {
   return (
     <>
-      <Profile user={user} className={styles.Profile} />
+      <Profile user={user} />
       <Statistics stats={data} />
       <FriendList friends={friends} className={styles.FriendList} />
       <TransactionHistory items={transactions} />
