@@ -24,7 +24,7 @@ class Counter extends Component {
     const { step } = this.props;
 
     return (
-      <div>
+      <div values={this.state}>
         <span>0</span>
         <button type="button" onClick={this.handleIncrement}>
           Increment by {step}
